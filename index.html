@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <ul>
+          <li>Home</li>
+          <li>Catalogue</li>
+          <li>About us</li>
+        </ul>
+      </div>
+
+      <div class="header">
+        <h1>Welcome to our Book Club!</h1>
+        <p>Feel free to add new books to our collection!</p>
+      </div>
+
+      <div class="content"></div>
+
+      <dialog id="dialog">
+        <h1>Add a new book!</h1>
+        <form id="newBook">
+          <div class="input-label">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" />
+          </div>
+
+          <div class="input-label">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" />
+          </div>
+
+          <div class="input-label">
+            <label for="pages">Pages:</label>
+            <input type="text" id="pages" name="noOfPages" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </dialog>
+
+      <button id="showDialog">Show Dialog</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
