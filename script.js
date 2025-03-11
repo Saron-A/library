@@ -4,7 +4,7 @@ let form = document.querySelector("#newBook");
 let dialog = document.querySelector("#dialog");
 let title = document.querySelector("#title");
 let author = document.querySelector("#author");
-let noOfPages = document.querySelector("#noOfPages");
+let noOfPages = document.querySelector("#pages");
 let isRead = false; // default value for the checkbox, could change this later
 
 let showDialog = document.querySelector("#showDialog");
@@ -55,7 +55,7 @@ function displayBooks() {
     bookTitle.textContent = book.title;
 
     let bookAuthor = document.createElement("h4");
-    bookAuthor.textContent = book.author;
+    bookAuthor.textContent = `By: ${book.author}`;
 
     let pages = document.createElement("p");
     pages.textContent = `Pages: ${book.noOfPages}`;

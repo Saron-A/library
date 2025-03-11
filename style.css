@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  /* border: 2px solid black; */
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, minmax(33.3%, 1fr));
+  gap: 10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+}
+li a {
+  text-decoration: none;
+}
+
+.header {
+  text-align: center;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(20%, 1fr));
+  gap: 40px;
+  padding: 10px 20px;
+  /* outline: 2px solid black; */
+  margin: 5px;
+}
+.book-card {
+  display: grid;
+  border: 2px solid rgb(147, 140, 140);
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 4px rgba(151, 142, 142, 0.564);
+}
+
+#showDialog {
+  padding: 5px;
+  width: 150px;
+  margin: 0 auto;
+  justify-self: flex-end;
+}
