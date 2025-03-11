@@ -92,16 +92,13 @@ dialog form {
 
 .book-content .book-title {
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   padding: 5px;
   font-family: "Times New Roman", Times, serif;
   box-shadow: 2px 2px 4px rgba(58, 56, 56, 0.299);
   border-radius: 20px;
 }
 
-.book-content .book-author {
-  margin-top: auto;
-}
 .book-buttons {
   display: flex;
   justify-content: center;
