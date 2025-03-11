@@ -35,6 +35,10 @@ li a {
 .header {
   text-align: center;
 }
+.header p {
+  margin-top: 10px;
+  font-style: italic;
+}
 .content {
   display: grid;
   grid-template-columns: repeat(4, minmax(20%, 1fr));
@@ -43,17 +47,40 @@ li a {
   /* outline: 2px solid black; */
   margin: 5px;
 }
+
+.dialog {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 30%;
+  text-align: center;
+  border-color: rgb(184, 183, 182);
+}
+.dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .book-card {
   display: grid;
-  border: 2px solid rgb(147, 140, 140);
+  /* border: 2px solid rgb(147, 140, 140); */
   padding: 8px;
   border-radius: 10px;
   box-shadow: 0 4px 4px 4px rgba(151, 142, 142, 0.564);
 }
 
-#showDialog {
+#showDialog,
+.dialog button {
   padding: 5px;
   width: 150px;
   margin: 0 auto;
   justify-self: flex-end;
+  border-radius: 10px;
+  border: none;
 }

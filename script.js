@@ -14,6 +14,7 @@ let library = JSON.parse(localStorage.getItem("library")) || [];
 displayBooks(); // Show books when page loads
 
 showDialog.addEventListener("click", () => {
+  dialog.classList.add("dialog");
   dialog.showModal();
 });
 
@@ -42,6 +43,8 @@ function addBooks(title, author, noOfPages, isRead) {
   localStorage.setItem("library", JSON.stringify(library));
 
   displayBooks();
+
+  Object.setPrototypeOf(newBook, Book.prototype);
 }
 
 function displayBooks() {
