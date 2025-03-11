@@ -54,17 +54,22 @@ function displayBooks() {
     bookCard.classList.add("book-card");
 
     let bookContent = document.createElement("div");
+    bookContent.classList.add("book-content");
     let bookTitle = document.createElement("h3");
+    bookTitle.classList.add("book-title");
     bookTitle.textContent = book.title;
 
     let bookAuthor = document.createElement("h4");
+    bookAuthor.classList.add("book-author");
     bookAuthor.textContent = `By: ${book.author}`;
 
     let pages = document.createElement("p");
-    pages.textContent = `Pages: ${book.noOfPages}`;
+    pages.classList.add("book-author");
+    pages.textContent = `${book.noOfPages} pages`;
 
     // Optional: Add Read Status
     let readStatus = document.createElement("p");
+    readStatus.classList.add("book-author");
     readStatus.textContent = book.isRead ? "Read" : "Not Read";
 
     // delete and edit functionalities

@@ -10,6 +10,7 @@ body {
   height: 100%;
 
   background-color: #fff; /* Optional: set your background */
+  font-family: Arial, sans-serif; /* You can switch fonts here */
   color: #333; /* Optional: set a default text color */
 }
 
@@ -44,7 +45,6 @@ li a {
   text-align: center;
   margin-top: 0;
   height: fit-content;
-  font-family: Arial, sans-serif; /* You can switch fonts here */
 }
 .header p {
   margin-top: 10px;
@@ -82,10 +82,30 @@ dialog form {
   box-shadow: 0 4px 4px 4px rgba(151, 142, 142, 0.564);
 }
 
+.book-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 6px;
+}
+
+.book-content .book-title {
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 5px;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 2px 2px 4px rgba(58, 56, 56, 0.299);
+  border-radius: 20px;
+}
+
+.book-content .book-author {
+  margin-top: auto;
+}
 .book-buttons {
   display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+  justify-content: center;
+  gap: 30px;
 }
 .book-buttons button {
   padding: 5px;
